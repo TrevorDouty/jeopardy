@@ -1,6 +1,8 @@
 export default class Questions {
     constructor(data) {
         this.question = data.question
+        this.value = data.value
+        this.answer = data.answer
     }
 
     get Template() {
