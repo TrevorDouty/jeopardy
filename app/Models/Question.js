@@ -1,4 +1,4 @@
-export default class Questions {
+export default class Question {
     constructor(data) {
         this.question = data.question
         this.value = data.value
@@ -8,9 +8,12 @@ export default class Questions {
     get Template() {
 
         return /*html*/`
-        <div class="card p-2 value">
+        
+        <div class="card m-auto">
             ${this.question}
         </div>
+    <button>Show answer</button>
+        
         `
     }
 }

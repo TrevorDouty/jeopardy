@@ -1,11 +1,11 @@
-import Questions from "./Models/Questions.js"
+import Question from "./Models/Question.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
-  /** @type {Questions[]} */
-  questions = []
-  answers = ''
+  /** @type {Question} */
+  question = null
+
 }
 
 export const ProxyState = new Proxy(new AppState(), {
