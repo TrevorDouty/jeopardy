@@ -1,13 +1,13 @@
-export default class Value {
+export default class Questions {
     constructor(data) {
-        this.title = data.title
+        this.question = data.question
     }
 
     get Template() {
 
         return /*html*/`
         <div class="card p-2 value">
-            ${this.title}
+            ${this.question}
         </div>
         `
     }
